@@ -1,0 +1,145 @@
+@font-face {
+  font-family:'TT lakes';
+  src: url(font/TTLakes-Medium.woff2) format('woff2')
+}
+@font-face {
+  font-family: "tt lakes";
+  src: url(font/TTLNeue-ThinIt.woff2) format('woff2')
+}
+body {
+margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: 1px solid #D9FFF5;
+  background: #F8F8F8;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+.header__pepole {
+  display: flex;
+  align-items: center;
+}
+.header__pepole::before {
+content: "";
+ background: #EAEAEA;
+ width: 2px;
+height: 32px;
+position: relative;
+ right: 18px;
+ }
+.header__burger {
+padding-right: 20px;
+}
+.header__repair{
+padding-right: 10px;
+}
+
+.main {
+ padding-top: 1px;
+  background: #F8F8F8;
+
+}
+
+.main__title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+ font-size: 28px;
+ font-family: 'TT lakes';
+ font-weight: 900;
+}
+
+.main__title::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 40px;
+  background: #41f6d7;
+  border: 1px solid black;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.main__menu {
+  list-style: none;
+  display: flex;  
+  overflow-x: scroll; 
+  gap: 23px;
+  white-space: nowrap;
+  padding: 0px 0px 10px 47px;
+  margin-left: -15px;
+}
+
+.main__item {
+ color: #7E7E82;
+padding: 10px;
+border-radius: 8px;
+
+}
+.main__item--active {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.main__description {
+  text-align: left;
+  padding: 20px;
+  padding-top: 0px;
+  font-family: "tt lakes";
+  font-weight: 900;
+}
+.main__reversal {
+  display: flex;
+}
+.main__element{
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 900;
+}
+.main__icon {
+  width: 25px;
+}
+.main__logo {
+ display: flex;
+ justify-content: center;
+ padding-top: 7px;
+ }
+ 
+ @media (min-width:320px) {
+  
+  .header__call,
+  .header__chat,
+  .header__profile {
+  display:none;
+ }
+  }
+ @media (min-width:480px) and (max-width:767px) {
+  .header__pepole::after {
+    content: "";
+    background: #EAEAEA;
+    width: 2px;
+    height: 32px;
+    position: relative;
+     left: 173px;
+    }
+    
+    .header__call,
+    .header__chat,
+    .header__profile {
+    display: flex;
+    padding-left:10px;
+    }
+    
+  .header__repair {
+    padding-right: 10px;
+    padding-left: 43px;
+  }
+  
+  }
